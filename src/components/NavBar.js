@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Nav, Navbar, NavDropdown, } from "react-bootstrap";
+import {Button, Container, Nav, Navbar, NavDropdown,} from "react-bootstrap";
 
 
 const NavBar = () => {
@@ -25,10 +25,7 @@ const NavBar = () => {
                         <Nav.Link href="#uniemploee">Сотрудникам ВУЗов</Nav.Link>
                     </Nav>
                     <Nav>
-                        <Nav.Link href="#deets">More deets</Nav.Link>
-                        <Nav.Link eventKey={2} href="#memes">
-                            Dank memes
-                        </Nav.Link>
+                        <Button href="#login" variant="primary">Войти</Button>
                     </Nav>
                 </Navbar.Collapse>
             </Container>
