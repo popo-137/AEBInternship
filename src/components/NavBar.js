@@ -6,7 +6,9 @@ import {observer} from "mobx-react-lite";
 
 
 const NavBar = observer(() => {
+
     const navigate = useNavigate()
+
     return (
         <Navbar collapseOnSelect expand="lg" bg="light" variant="blue">
             <Container>
