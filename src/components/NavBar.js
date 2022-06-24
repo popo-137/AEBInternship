@@ -1,8 +1,12 @@
 import React from 'react';
-import {Button, Container, Nav, Navbar, NavDropdown,} from "react-bootstrap";
+import {Button, Container, Nav, Navbar,} from "react-bootstrap";
+import {LOGIN_ROUTE} from "../utils/consts";
+import {useNavigate} from "react-router-dom";
+import {observer} from "mobx-react-lite";
 
 
-const NavBar = () => {
+const NavBar = observer(() => {
+    const navigate = useNavigate()
     return (
         <Navbar collapseOnSelect expand="lg" bg="light" variant="blue">
             <Container>
@@ -25,12 +29,12 @@ const NavBar = () => {
                         <Nav.Link href="#uniemploee">Сотрудникам ВУЗов</Nav.Link>
                     </Nav>
                     <Nav>
-                        <Button href="#login" variant="primary">Войти</Button>
+                        <Button variant={"outline-black"} onClick={() => navigate(LOGIN_ROUTE)}>Войти</Button>
                     </Nav>
                 </Navbar.Collapse>
             </Container>
         </Navbar>
     );
-};
+});
 
 export default NavBar;
