@@ -22,8 +22,8 @@ const NavBar = observer(() => {
                 />{' '}
                 AEB.Internship
                     </Navbar.Brand>
-                <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-                <Navbar.Collapse id="responsive-navbar-nav">
+
+
                     <Nav className="me-auto">
                         <Nav.Link href="#info">Общая информация</Nav.Link>
                         <Nav.Link href="#bankemploee">Сотрудникам банка</Nav.Link>
@@ -38,7 +38,7 @@ const NavBar = observer(() => {
                             Войти
                         </Button>
                     </Nav>
-                </Navbar.Collapse>
+
             </Container>
         </Navbar>
     );

@@ -6,8 +6,8 @@ import AppRouter from "./components/AppRouter";
 const App = () => {
   return (
       <BrowserRouter>
+          <NavBar />
         <AppRouter/>
-        <NavBar/>
       </BrowserRouter>
 
   );
