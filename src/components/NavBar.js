@@ -1,6 +1,6 @@
 import React from 'react';
 import {Button, Container, Nav, Navbar,} from "react-bootstrap";
-import {LOGIN_ROUTE} from "../utils/consts";
+import {LOGIN_ROUTE, MAIN_ROUTE} from "../utils/consts";
 import {useNavigate} from "react-router-dom";
 import {observer} from "mobx-react-lite";
 
@@ -10,9 +10,9 @@ const NavBar = observer(() => {
     const navigate = useNavigate()
 
     return (
-        <Navbar collapseOnSelect expand="lg" bg="light" variant="blue">
+        <Navbar expand="lg" bg="light" variant="blue">
             <Container>
-                <Navbar.Brand href="#home">
+                <Navbar.Brand href={MAIN_ROUTE}>
                 <img
                     alt=""
                     src="/unnamed (1).png"
@@ -31,7 +31,12 @@ const NavBar = observer(() => {
                         <Nav.Link href="#uniemploee">Сотрудникам ВУЗов</Nav.Link>
                     </Nav>
                     <Nav>
-                        <Button variant={"outline-black"} onClick={() => navigate(LOGIN_ROUTE)}>Войти</Button>
+                        <Button
+                            variant={"outline-black"}
+                            onClick={() => navigate(LOGIN_ROUTE)}
+                        >
+                            Войти
+                        </Button>
                     </Nav>
                 </Navbar.Collapse>
             </Container>
