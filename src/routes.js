@@ -1,7 +1,16 @@
-import {ADMIN_ROUTE, LOGIN_ROUTE, MAIN_ROUTE, REGISTRATION_ROUTE} from "./utils/consts";
+import {
+    ADMIN_ROUTE,
+    APPLICATION_ROUTE,
+    LOGIN_ROUTE,
+    MAIN_ROUTE,
+    REGISTRATION_ROUTE,
+    VACANCIES_ROUTE
+} from "./utils/consts";
 import Auth from "./pages/Auth";
 import Bankemploee from "./pages/Bankemploee";
 import Main from "./pages/Main";
+import Vacancies from "./pages/Vacancies";
+import Application from "./pages/Application";
 
 export const authRoutes = [
     {
@@ -23,6 +32,14 @@ export const publicRoutes = [
     {
         path: REGISTRATION_ROUTE,
         Component: Auth
+    },
+    {
+        path: VACANCIES_ROUTE,
+        Component: Vacancies
+    },
+    {
+        path: APPLICATION_ROUTE,
+        Component: Application
     },
 
 ]
