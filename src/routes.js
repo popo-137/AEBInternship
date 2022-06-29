@@ -1,6 +1,5 @@
 import {
     ADMIN_ROUTE,
-    APPLICATION_ROUTE,
     LOGIN_ROUTE,
     MAIN_ROUTE,
     REGISTRATION_ROUTE,
@@ -10,7 +9,6 @@ import Auth from "./pages/Auth";
 import Bankemploee from "./pages/Bankemploee";
 import Main from "./pages/Main";
 import Vacancies from "./pages/Vacancies";
-import Application from "./pages/Application";
 
 export const authRoutes = [
     {
@@ -37,9 +35,6 @@ export const publicRoutes = [
         path: VACANCIES_ROUTE,
         Component: Vacancies
     },
-    {
-        path: APPLICATION_ROUTE,
-        Component: Application
-    },
+
 
 ]
