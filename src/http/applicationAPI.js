@@ -1,7 +1,7 @@
 import {$authHost, $host} from "./index";
 
 export const createApplication = async (application) => {
-    const {data} = await $authHost.post('api/application',application)
+    const {data} = await $authHost.post('api/add-st_user',application)
     return data
 }
 /*
