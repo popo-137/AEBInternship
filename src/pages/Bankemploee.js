@@ -1,11 +1,29 @@
-import React from 'react';
+import React, {useContext, useEffect} from 'react';
+import {Container, Pagination} from "react-bootstrap";
+import Application from "../components/Application";
+import {fetchApplications} from "../http/applicationAPI";
+import {observer} from "mobx-react-lite";
+import {Context} from "../index";
+import ApplicationList from '../components/ApplicationList';
 
-const Bankemploee = () => {
+const Bankemploee = observer(() => {
+
+    const {application} = useContext(Context)
+
+    useEffect(() => {
+        fetchApplications().then(data => {
+            application.setApplications(data.rows)
+           
+        })
+    },[])
+
     return (
-        <div>
-            emploee
-        </div>
+
+        <Container>
+<ApplicationList/>
+</Container>
+
     );
-};
+});
 
 export default Bankemploee;

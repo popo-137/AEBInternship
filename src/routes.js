@@ -1,5 +1,5 @@
 import {
-    ADMIN_ROUTE,
+    ADMIN_ROUTE, APPLICATION_ROUTE,
     LOGIN_ROUTE,
     MAIN_ROUTE,
     REGISTRATION_ROUTE,
@@ -9,14 +9,23 @@ import Auth from "./pages/Auth";
 import Bankemploee from "./pages/Bankemploee";
 import Main from "./pages/Main";
 import Vacancies from "./pages/Vacancies";
+import ApplicationPage from "./pages/ApplicationPage";
 
 export const authRoutes = [
+
+
+]
+export const publicRoutes = [
+
     {
         path: ADMIN_ROUTE,
         Component: Bankemploee
-    }
-]
-export const publicRoutes = [
+    },
+
+    {
+        path: APPLICATION_ROUTE,
+        Component: ApplicationPage
+    },
 
     {
         path: MAIN_ROUTE,
