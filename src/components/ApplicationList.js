@@ -1,6 +1,6 @@
 import React, {useContext} from 'react';
 import {observer} from "mobx-react-lite";
-import {Row} from "react-bootstrap";
+import {Row,Table } from "react-bootstrap";
 import {Context} from "../index";
 import Application from "./Application";
 
@@ -8,11 +8,25 @@ const ApplicationList = observer(() => {
     const {application} = useContext(Context)
 
     return (
-        <Row className="d-flex">
+        <Table striped bordered hover size="sm">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Фамилия</th>
+          <th>Имя</th>
+          <th>Отчество</th>
+          <th>Возраст</th>
+          <th>Университет</th>
+          <th>Степень образования</th>
+          <th>Курс</th>
+          <th>Умения</th>
+          <th>Статус</th>
+        </tr>
+      </thead>
             {application.applications.map(application =>
                 <Application key={application.id} application={application}/>
             )}
-        </Row>
+        </Table>
     );
 });
 

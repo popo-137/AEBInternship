@@ -3,13 +3,15 @@ import {
     LOGIN_ROUTE,
     MAIN_ROUTE,
     REGISTRATION_ROUTE,
-    VACANCIES_ROUTE
+    VACANCIES_ROUTE,
+    STUDENTS_ROUTE
 } from "./utils/consts";
 import Auth from "./pages/Auth";
 import Bankemploee from "./pages/Bankemploee";
 import Main from "./pages/Main";
 import Vacancies from "./pages/Vacancies";
 import ApplicationPage from "./pages/ApplicationPage";
+import StudentsPage from "./pages/StudentsPage";
 
 export const authRoutes = [
 
@@ -44,6 +46,10 @@ export const publicRoutes = [
         path: VACANCIES_ROUTE,
         Component: Vacancies
     },
-
+  
+    {
+        path: STUDENTS_ROUTE,
+        Component: StudentsPage
+    },
 
 ]
