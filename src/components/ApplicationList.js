@@ -12,15 +12,16 @@ const ApplicationList = observer(() => {
       <thead>
         <tr>
           <th>#</th>
+          <th>e-mail</th>
           <th>Фамилия</th>
           <th>Имя</th>
           <th>Отчество</th>
-          <th>Возраст</th>
           <th>Университет</th>
+          <th>Институт</th>
+          <th>Группа</th>
           <th>Степень образования</th>
           <th>Курс</th>
           <th>Умения</th>
-          <th>Статус</th>
         </tr>
       </thead>
             {application.applications.map(application =>

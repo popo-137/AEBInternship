@@ -14,37 +14,38 @@ const StudentsPage = () => {
       <Accordion.Item eventKey="0">
         <Accordion.Header>Управление инновационного развития (УИР)</Accordion.Header>
         <Accordion.Body>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
+        Разработка программного обеспечения. В 2016 году в периметре банковской группы 
+        была создана дочерняя компания «АЭБ АйТи», на площадке которой собрали перспективных ребят
+         с компетенциями  в области финтеха. В 2019 году сотрудников перевели в головную кредитную организацию, 
+         таким образом, тиражируя их знания и опыт на весь банк. Так было создано соответствующее подразделение разработчиков 
+         для повышения скорости вывода на рынок новых продуктов и услуг, а также усилено подразделение ИТ поддержки 
+         бизнеса и ИТ-поддержки сотрудников. С этой целью была изменена организационная структура Банка. Для цифровой
+          трансформации Банка в соответствии с новой Стратегией развития Банковской группы АКБ «Алмазэргиэнбанк» АО на 2019–2022
+           годы созданы: Управление инновационного развития, Офис трансформации, в целом усилен IT-блок в структуре Банка. В 2020 году тенденция 
+           усиления IT-направления продолжилась, были созданы новые продуктовые команды в департаментах корпоративного и розничного бизнеса, а также увеличена
+            численность Управления инновационного развития.
         </Accordion.Body>
       </Accordion.Item>
       <Accordion.Item eventKey="1">
-        <Accordion.Header>Сопровождение информационных технологий (СИТ)</Accordion.Header>
+        <Accordion.Header>Управление информационных технологий (УИТ)</Accordion.Header>
         <Accordion.Body>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
+        Сопровождение имеющегося программного обеспечения
         </Accordion.Body>
       </Accordion.Item>
       <Accordion.Item eventKey="2">
       <Accordion.Header>Управление пластиковых карточек (УПК)</Accordion.Header>
         <Accordion.Body>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
+        Банк постоянно совершенствует свою инфраструктуру для обслуживания пластиковых карт,
+         расширяя терминальную и банкоматную сети. Количество электронных терминалов на 1 января
+          2021 года превысило 1,4 тысячи штук, банкоматная сеть включает 283 банкомата, количество КСО — 109 штук.
+           Для удобства обслуживания клиентов банкоматы расположены в офисах Банка, в местах высокой концентрации потенциальных клиентов,
+            а также на территории предприятий — участников зарплатных проектов.
+В 2020 году продолжилась активная работа по совершенствованию услуг дистанционного банковского обслуживания 
+(ДБО) и привлечению клиентов к данным услугам. С помощью постоянной работы над улучшением сервиса и работы приложения
+ «АЭБ Онлайн 3.0», разрабатываемого дочерней компанией Банка, удалось  достигнуть роста количества пользователей приложения более 
+ чем на 26 %. Всего за 2020 год подключены к системе «АЭБ Онлайн» 19 тысяч клиентов. На 1 января  2021 года количество клиентов — 
+ пользователей «АЭБ Онлайн» составило более 92 тысячи клиентов (29 % от общего количества розничных клиентов). В дальнейшем Банк продолжит
+  работу над развитием функционала своих сервисов ДБО для повышения качества обслуживания клиентов.
         </Accordion.Body>
       </Accordion.Item>
     </Accordion>

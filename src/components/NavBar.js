@@ -1,6 +1,6 @@
 import React from 'react';
 import {Button, Container, Nav, Navbar,} from "react-bootstrap";
-import {ADMIN_ROUTE, LOGIN_ROUTE, MAIN_ROUTE,STUDENTS_ROUTE} from "../utils/consts";
+import {ADMIN_ROUTE, APPLICATION_ROUTE, LOGIN_ROUTE, MAIN_ROUTE,STUDENTS_ROUTE} from "../utils/consts";
 import {useNavigate} from "react-router-dom";
 import {observer} from "mobx-react-lite";
 
@@ -26,16 +26,17 @@ const NavBar = observer(() => {
 
                     <Nav className="me-auto">
                     <Nav.Link href={STUDENTS_ROUTE}>Студентам</Nav.Link>
-                        <Nav.Link href={ADMIN_ROUTE}>Сотрудникам банка</Nav.Link>
+                        {/* <Nav.Link href={ADMIN_ROUTE}>Список прошедших</Nav.Link> */}
+                    
                         
                         
                     </Nav>
                     <Nav>
                         <Button
                             variant={"outline-black"}
-                            onClick={() => navigate(LOGIN_ROUTE)}
+                            href={"http://127.0.0.1:8000/admin"}
                         >
-                            Войти
+                            Вход для сотрудников
                         </Button>
                     </Nav>
 

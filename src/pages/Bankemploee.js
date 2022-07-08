@@ -26,6 +26,13 @@ const Bankemploee = observer(() => {
         })
     },[])
 
+    useEffect(() => {
+        fetchApplications(application.selectedDegree.id, application.selectedUniversity.id,).then(data => {
+            application.setApplications(data)
+            
+        })
+    },[application.selectedDegree, application.selectedUniversity,])
+
     return (
 <div>
         <Container>

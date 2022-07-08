@@ -6,8 +6,10 @@ export const createApplication = async (application) => {
     return data
 }
 
-export const fetchApplications = async () => {
-    const {data} = await $host.get('http://127.0.0.1:8000/api/get_st_users/',)
+export const fetchApplications = async (university_id, current_degree_id) => {
+    const {data} = await $host.get('http://127.0.0.1:8000/api/get_st_users/',{params:{
+        university_id, current_degree_id
+}})
     return data
 }
 
@@ -23,5 +25,10 @@ export const fetchUniversitys = async () => {
 
 export const fetchDegrees = async () => {
     const {data} = await $host.get('http://127.0.0.1:8000/api/get_degrees/')
+    return data
+}
+
+export const fetchInsts = async () => {
+    const {data} = await $host.get('http://127.0.0.1:8000/api/get_insts/')
     return data
 }
